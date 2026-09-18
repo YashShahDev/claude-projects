@@ -10,6 +10,7 @@ dispatches to all (or one) of them.
 ```
 .
 ├── Makefile              # root dispatcher: build/test/lint/clean across all projects
+├── CLAUDE.md             # engineering conventions: tests, performance, comments, quality
 ├── projects/             # one folder per project, each independent
 │   └── <name>/
 │       ├── Makefile      # build, test, lint, clean targets for this project
@@ -26,6 +27,11 @@ dispatches to all (or one) of them.
 Projects are independent: no shared build graph, no cross-project dependency
 resolution. Each one just needs to implement `build`, `test`, `lint`, and
 `clean` in its own `Makefile` (a no-op is fine to start).
+
+Shared engineering conventions — testing expectations, the measure-then-optimize
+rule for performance, comment style, and the quality bar — live in
+[`CLAUDE.md`](CLAUDE.md) and apply to every project. A project can override them
+for itself with its own `projects/<name>/CLAUDE.md`.
 
 ## Usage
 
