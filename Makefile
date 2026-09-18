@@ -10,7 +10,7 @@ help:
 	@echo "  make test  [PROJECT=name]                  Test all projects, or one"
 	@echo "  make lint  [PROJECT=name]                  Lint all projects, or one"
 	@echo "  make clean [PROJECT=name]                  Clean all projects, or one"
-	@echo "  make new PROJECT=name [LANG=generic|python|node|go]   Scaffold a new project"
+	@echo "  make new PROJECT=name [LANG=generic|python|node|go|rust]   Scaffold a new project"
 
 list:
 	@if [ -z "$(PROJECTS)" ]; then \
@@ -35,6 +35,6 @@ endif
 
 new:
 ifndef PROJECT
-	$(error Usage: make new PROJECT=<name> [LANG=generic|python|node|go])
+	$(error Usage: make new PROJECT=<name> [LANG=generic|python|node|go|rust])
 endif
 	@./scripts/new_project.sh "$(PROJECT)" "$(if $(LANG),$(LANG),generic)"

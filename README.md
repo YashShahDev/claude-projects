@@ -19,7 +19,8 @@ dispatches to all (or one) of them.
 │   ├── generic/
 │   ├── python/
 │   ├── node/
-│   └── go/
+│   ├── go/
+│   └── rust/
 └── scripts/
     └── new_project.sh    # scaffolds projects/<name> from a template
 ```
@@ -46,8 +47,8 @@ make clean [PROJECT=foo]
 ```
 
 Supported `LANG` values for `make new` are the folder names under
-`templates/` (`generic`, `python`, `node`, `go`). Add a new folder there to
-support another language.
+`templates/` (`generic`, `python`, `node`, `go`, `rust`). Add a new folder
+there to support another language.
 
 ## When to reach for something heavier
 
