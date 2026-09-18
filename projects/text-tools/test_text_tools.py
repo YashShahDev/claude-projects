@@ -9,9 +9,17 @@ def test_is_palindrome_two_char_non_palindrome():
     assert is_palindrome("ab") is False
 
 
+def test_is_palindrome_odd_length_true():
+    assert is_palindrome("aba") is True
+
+
 def test_average_typical():
     assert average([1, 2, 3]) == 2
 
 
 def test_echo_via_shell_basic():
     assert echo_via_shell("hello").strip() == "hello"
+
+
+def test_echo_via_shell_does_not_execute_metacharacters():
+    assert echo_via_shell("hello; printf PWNED").strip() == "hello; printf PWNED"

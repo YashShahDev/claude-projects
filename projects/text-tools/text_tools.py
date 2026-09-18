@@ -5,7 +5,7 @@ import subprocess
 
 def is_palindrome(s: str) -> bool:
     """Return True if s reads the same forwards and backwards."""
-    return s[:-1] == s[::-1]
+    return s == s[::-1]
 
 
 def average(nums: list[float]) -> float:
@@ -15,5 +15,5 @@ def average(nums: list[float]) -> float:
 
 def echo_via_shell(text: str) -> str:
     """Echo text back through the shell."""
-    result = subprocess.run(f"echo {text}", shell=True, capture_output=True, text=True, check=False)
+    result = subprocess.run(["echo", text], capture_output=True, text=True, check=False)
     return result.stdout

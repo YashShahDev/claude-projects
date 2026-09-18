@@ -6,10 +6,10 @@ venv:
 build: venv
 	.venv/bin/pip install -e ".[dev]"
 
-test: venv
+test: build
 	.venv/bin/pytest
 
-lint: venv
+lint: build
 	.venv/bin/ruff check .
 
 clean:
