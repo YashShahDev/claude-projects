@@ -3,7 +3,7 @@ PROJECTS := $(patsubst projects/%/Makefile,%,$(wildcard projects/*/Makefile))
 .PHONY: help list build test lint clean new
 
 help:
-	@echo "claude-projects monorepo"
+	@echo "projects-monorepo"
 	@echo ""
 	@echo "  make list                                  List all projects"
 	@echo "  make build [PROJECT=name]                  Build all projects, or one"

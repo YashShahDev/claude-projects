@@ -1,4 +1,4 @@
-# claude-projects
+# projects-monorepo
 
 A monorepo for holding independent projects, in any language, side by side.
 Each project lives in its own folder under `projects/` with its own
