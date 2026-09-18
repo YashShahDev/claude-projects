@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+
+# editors
+.vscode/
+.idea/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node
+node_modules/
+
+# Go
+/bin/
+
+# generic build output
+dist/
+build/
