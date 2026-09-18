@@ -15,7 +15,7 @@ __pycache__/
 node_modules/
 
 # Go
-/bin/
+bin/
 
 # generic build output
 dist/
