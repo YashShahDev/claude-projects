@@ -109,9 +109,6 @@ where they earn their space.
   what input. A perf PR without a measurement in the description isn't ready.
 - **Bug fixes state the root cause**, not just the symptom, and name the test
   that now covers it. "Fixed the crash" says nothing a year from now.
-- Record reviews you run on the branch in the PR: what was flagged, and what
-  you did about each finding — fixed it, or why it stands. A finding that was
-  considered and rejected is useful history; a silently dropped one isn't.
 - PRs are **squash-merged**, so the PR title becomes the commit subject on
   `main`. Write it like one: imperative mood, under ~70 characters, describing
   the change rather than the activity ("Cache parsed configs per run", not

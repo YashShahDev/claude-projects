@@ -35,5 +35,4 @@ Otherwise: what was measured, how, and the before/after numbers.
 <!--
 Where should a reviewer look hardest? Any tradeoff you made deliberately,
 anything you're unsure about, anything you'd like a second opinion on.
-Findings from reviews run on this branch go here too, with what you did about them.
 -->
